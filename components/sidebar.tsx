@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Montserrat } from 'next/font/google'
 import { Code, ImageIcon, LayoutDashboard, MessageSquare, Music, Settings, VideoIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
-
+// inporting shadcn ui
 import { cn } from "@/lib/utils";
 import { FreeCounter } from "@/components/free-counter";
 
@@ -86,6 +86,7 @@ export const Sidebar = ({
               )}
             >
               <div className="flex items-center flex-1">
+                  {/* using shadcn ui */}
                 <route.icon className={cn("h-5 w-5 mr-3", route.color)} />
                 {route.label}
               </div>
