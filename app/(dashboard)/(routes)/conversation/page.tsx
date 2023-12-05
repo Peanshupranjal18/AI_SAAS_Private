@@ -47,6 +47,7 @@ const ConversationPage = () => {
       const response = await axios.post('/api/conversation', { messages: newMessages });
       setMessages((current) => [...current, userMessage, response.data]);
       
+      // form reset so that the input is cleared
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
