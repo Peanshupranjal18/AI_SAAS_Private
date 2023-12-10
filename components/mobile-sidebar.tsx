@@ -15,9 +15,7 @@ export const MobileSidebar = ({
   isPro: boolean;
 }) => {
   const [isMounted, setIsMounted] = useState(false);
-  
 
-  // fix for hydration error occured by the way they are rendered
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -25,7 +23,7 @@ export const MobileSidebar = ({
   if (!isMounted) {
     return null;
   }
-  
+
   return (
     <Sheet>
       <SheetTrigger>

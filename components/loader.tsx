@@ -15,4 +15,4 @@ export const Loader = () => {
       </p>
     </div>
   );
-}; 
+};
