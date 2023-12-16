@@ -8,8 +8,6 @@ export const formSchema = z.object({
   resolution: z.string().min(1),
 });
 
-// how many photos to generate
-
 export const amountOptions = [
   {
     value: "1",
@@ -47,3 +45,4 @@ export const resolutionOptions = [
     label: "1024x1024",
   },
 ];
+

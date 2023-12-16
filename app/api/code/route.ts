@@ -11,7 +11,6 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-//telling the api what to do specific to the generation of the code
 const instructionMessage: ChatCompletionRequestMessage = {
   role: "system",
   content: "You are a code generator. You must answer only in markdown code snippets. Use code comments for explanations."
@@ -58,4 +57,4 @@ export async function POST(
     console.log('[CODE_ERROR]', error);
     return new NextResponse("Internal Error", { status: 500 });
   }
-}; 
+};

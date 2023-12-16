@@ -1,5 +1,3 @@
-// use client because we will have interactive elements inside
-
 "use client";
 
 import { ArrowRight } from "lucide-react";
@@ -19,8 +17,6 @@ export default function HomePage() {
         <h2 className="text-2xl md:text-4xl font-bold text-center">
           Explore the power of AI
         </h2>
-        {/* text muted foreground this is not from tailwindcss
-        it is from shadcn ui */}
         <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
           Chat with the smartest AI - Experience the power of AI
         </p>

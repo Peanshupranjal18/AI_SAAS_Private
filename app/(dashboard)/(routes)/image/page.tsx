@@ -43,7 +43,7 @@ const PhotoPage = () => {
       setPhotos([]);
 
       const response = await axios.post('/api/image', values);
-      // extracting the url
+
       const urls = response.data.map((image: { url: string }) => image.url);
 
       setPhotos(urls);
@@ -99,7 +99,6 @@ const PhotoPage = () => {
                 </FormItem>
               )}
             />
-            {/* arrow wala function add karne ke liye ye code h */}
             <FormField
               control={form.control}
               name="amount"
@@ -183,7 +182,6 @@ const PhotoPage = () => {
                   src={src}
                 />
               </div>
-              {/* cardfooter having the download option */}
               <CardFooter className="p-2">
                 <Button onClick={() => window.open(src)} variant="secondary" className="w-full">
                   <Download className="h-4 w-4 mr-2" />

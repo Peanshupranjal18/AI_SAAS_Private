@@ -125,7 +125,6 @@ const CodePage = () => {
                 )}
               >
                 {message.role === "user" ? <UserAvatar /> : <BotAvatar />}
-                {/* code production improve karne ke liye */}
                 <ReactMarkdown components={{
                   pre: ({ node, ...props }) => (
                     <div className="overflow-auto w-full my-2 bg-black/10 p-2 rounded-lg">
@@ -135,7 +134,6 @@ const CodePage = () => {
                   code: ({ node, ...props }) => (
                     <code className="bg-black/10 rounded-lg p-1" {...props} />
                   )
-                  // code jo overflow hoga usi ka management
                 }} className="text-sm overflow-hidden leading-7">
                   {message.content || ""}
                 </ReactMarkdown>
@@ -149,3 +147,4 @@ const CodePage = () => {
 }
  
 export default CodePage;
+

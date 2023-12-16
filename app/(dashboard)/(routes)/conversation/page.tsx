@@ -27,8 +27,6 @@ const ConversationPage = () => {
   const router = useRouter();
   const proModal = useProModal();
   const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
-   
-//   zod is used for schema purpose in typescript
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -47,7 +45,6 @@ const ConversationPage = () => {
       const response = await axios.post('/api/conversation', { messages: newMessages });
       setMessages((current) => [...current, userMessage, response.data]);
       
-      // form reset so that the input is cleared
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
@@ -102,7 +99,6 @@ const ConversationPage = () => {
                   </FormItem>
                 )}
               />
-              {/*   */}
               <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
                 Generate
               </Button>
@@ -141,3 +137,4 @@ const ConversationPage = () => {
 }
  
 export default ConversationPage;
+

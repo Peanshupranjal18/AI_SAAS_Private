@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-// clerk provider
-import { ClerkProvider } from "@clerk/nextjs";
+import { ClerkProvider } from '@clerk/nextjs'
 
 import { ToasterProvider } from '@/components/toaster-provider'
 import { ModalProvider } from '@/components/modal-provider'
@@ -22,7 +21,6 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    // wrap in clerkprovider
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <CrispProvider />

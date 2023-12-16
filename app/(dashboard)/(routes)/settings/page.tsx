@@ -27,3 +27,4 @@ const SettingsPage = async () => {
 }
  
 export default SettingsPage;
+
