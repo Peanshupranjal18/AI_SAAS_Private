@@ -1,6 +1,6 @@
 # Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023
 
-This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023.
+This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe.
 
 Features:
 
@@ -41,7 +41,6 @@ npm i
 
 ### Setup .env file
 
-
 ```js
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
@@ -81,6 +80,6 @@ npm run dev
 
 Running commands with npm `npm run [command]`
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |
