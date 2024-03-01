@@ -6,6 +6,7 @@ import { checkSubscription } from "@/lib/subscription";
 import { incrementApiLimit, checkApiLimit } from "@/lib/api-limit";
 
 const configuration = new Configuration({
+  organization:'org-JoUv0zg74Z5d6EbzP0pvzy8U',
   apiKey: process.env.OPENAI_API_KEY,
 });
 

@@ -63,7 +63,7 @@ NEXT_PUBLIC_APP_URL="http://localhost:3000"
 
 ### Setup Prisma
 
-Add MySQL Database (I used CockroachDB)
+Add MySQL Database (I used CockRoachDB)
 
 ```shell
 npx prisma db push
