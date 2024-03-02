@@ -1,5 +1,0 @@
-To open the file three things must be turned open
-
-1 npm run dev
-2 prisma studio
-3 stripe listen --forward-to localhost:3000/api/webhook
